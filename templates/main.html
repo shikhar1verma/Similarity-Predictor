@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            similarity predictor
+        </title>
+    </head>
+
+    <body>
+        <h1><p>Similarity Predictor</p></h1><br><br>
+        <p>please enter more than 8 words in each text box</p>
+        <form action="" method="post">
+      <!--      <label for="text_1">Text 1: </label><br>
+            <input id="text_1" type="text_1" name="text1_field" ><br>
+            <label for='text_2'>Text 2: </label><b>
+                <input id='text_2' type='text_2' name='text2_field' ><br> -->
+                {% csrf_token %}
+                {{form}}
+            <input type="submit" value="Predict the Similarity">
+        </form><br><br>
+        <p>Similarity Percentage</p>
+        <p>{{text1}}</p>
+         
+    </body>
+</html>
